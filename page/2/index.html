@@ -1,0 +1,255 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>N0Ne-Zer0's Blog - 正在进行算法竞赛</title><meta name="author" content="N0Ne-Zer0"><meta name="copyright" content="N0Ne-Zer0"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="N0Ne-Zer0&#39;s Blog">
+<meta property="og:url" content="https://n0ne-zer0.github.io/page/2/index.html">
+<meta property="og:site_name" content="N0Ne-Zer0&#39;s Blog">
+<meta property="og:description" content="个人博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://n0ne-zer0.github.io/img/avatar.webp">
+<meta property="article:author" content="N0Ne-Zer0">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://n0ne-zer0.github.io/img/avatar.webp"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.webp"><link rel="canonical" href="https://n0ne-zer0.github.io/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'N0Ne-Zer0\'s Blog',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><link rel="stylesheet" href="/css/diff.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.28/dist/katex.min.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      if ($loadingBox.classList.contains('loaded')) return
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+
+  if (document.readyState === 'complete') {
+    preloader.endLoading()
+  } else {
+    window.addEventListener('load', preloader.endLoading)
+    document.addEventListener('DOMContentLoaded', preloader.endLoading)
+    // Add timeout protection: force end after 7 seconds
+    setTimeout(preloader.endLoading, 7000)
+  }
+
+  if (false) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div class="bg-animation" id="web_bg" style="background-image: url(/img/bg.webp);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">60</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home/首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives/归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder"></i><span> Categories/分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tag"></i><span> Tags/标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link/友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> About/关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/img/idx_img.webp);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">N0Ne-Zer0's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home/首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives/归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder"></i><span> Categories/分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tag"></i><span> Tags/标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link/友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> About/关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">N0Ne-Zer0's Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/N0Ne-Zer0" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://space.bilibili.com/392726263" target="_blank" title="Bilibili"><i class="fab fa-bilibili" style="color: #FB7299;"></i></a><a class="social-icon" href="mailto:2677816734@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc masonry" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover"><a href="/2026/05/22/%E6%AF%94%E8%B5%9B/Codeforces/1099d2/" title="1099d2"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc7.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1099d2"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/05/22/%E6%AF%94%E8%B5%9B/Codeforces/1099d2/" title="1099d2">1099d2</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-05-22T20:53:00.000Z" title="更新于 2026年05月22日 20:53:00">2026年05月22日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/">比赛</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/Codeforces/">Codeforces</a></span></div><div class="content">本场比赛赛时只做出两道题，A题不必多说，秒了。 对于B题，我最开始复杂度想错了，将每个测试点中的多次遍历当场O(n2)O(n^2)O(n2)复杂度了，因此一直在想是否有O(log⁡n)O(\log n)O(logn)的解法，知道最后一小时才反应过来，但由于最初的写法很复杂又浪费很长时间，随后灵光乍现想到了贪心解。 然后去做C题，把C题的输出当成了最优情况下的数字求出来了，而非答案所要的次数，直到最后五分钟才发现，也是惨败了… Codefoeces的题相比AtCoder差别还是蛮大的，前者有很多思维题 A 问题陈述 给你一个整数 nnn 。你需要构造一个整数数组 a1,a2,…,ana_1, a_2, \ldots, a_na1​,a2​,…,an​ 以满足以下条件：  从 111 到 nnn 的所有 iii 都是 1≤ai≤2⋅n1 \leq a_i \leq 2 \cdot n1≤ai​≤2⋅n 。 数组的所有元素和相邻元素的和都是成对不同的。换句话说，在数字 {a1,a2,…,an,a1+a2,a2+a3,…,an−1+an}\{a_1, a_2, \ldots, a_n, ...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/05/21/%E6%95%99%E7%A8%8B/Hexo%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4/" title="Hexo基本指令"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc4.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo基本指令"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/05/21/%E6%95%99%E7%A8%8B/Hexo%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4/" title="Hexo基本指令">Hexo基本指令</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-05-21T22:05:00.000Z" title="更新于 2026年05月21日 22:05:00">2026年05月21日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="content">自用来查表的… 其中有AI辅助 new的使用方法  hexo new &quot;我的文章&quot;: 创建一篇新文章。默认布局是 post，文件会生成在 source/_posts 目录下。 hexo new page about: 创建一个新页面，会在 source 目录下新建一个 about 文件夹，并生成 index.md 文件。 hexo new draft &quot;草稿标题&quot;: 创建一篇草稿，草稿不会在博客中显示。 hexo publish &quot;草稿标题&quot;: 将草稿发布，并移至 source/_posts 目录。(但是我做了文件分类，不能用这个)  利用文件的分类： hexo new -p \第一级\第二级\文章名 &quot;文章名&quot;: 会在source/_posts/第一级/第二级目录下生成文章名.md文件。 例如：hexo new -p \比赛\AtCoder\ABC458 &quot;ABC458&quot;  其他常用指令  hexo g: 生成网页的静态文件，运行后会在hexo根目录生成/public文件夹，里面...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/05/21/%E6%9D%82%E9%A1%B9/%E7%AC%AC%E4%B8%80%E5%AD%A6%E5%B9%B4%E8%AE%A1%E5%88%92/" title="第一学年计划"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc3.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第一学年计划"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/05/21/%E6%9D%82%E9%A1%B9/%E7%AC%AC%E4%B8%80%E5%AD%A6%E5%B9%B4%E8%AE%A1%E5%88%92/" title="第一学年计划">第一学年计划</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-05-21T21:50:00.000Z" title="更新于 2026年05月21日 21:50:00">2026年05月21日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9D%82%E9%A1%B9/">杂项</a></span></div><div class="content"> [ ] 4.2GPA…？（计科保研可能要4.1+绩点，由于第一学期摆烂均摊下来就这样o(╥﹏╥)o 如果不行就可以摆烂了） [ ] 争取能够AK掉ABC比赛(会赢吗…) [ ] 手写常见的数据结构并封装，用博客的形式呈现（这个简单） [ ] 用掉游泳卡的全部次数（截止目前还有22次.Σ(⊙▽⊙&quot;a） [ ] 把光谷步行街逛得和回家一样（还是这个简单#^.^#） [ ] 找到女朋友 [ ] 和异性能够正常交流（上一个太不切实际，但是感觉这个也好难啊┭┮﹏┭┮）  </div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/05/20/%E6%AF%94%E8%B5%9B/AtCoder/ABC458/" title="ABC458"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc1.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ABC458"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/05/20/%E6%AF%94%E8%B5%9B/AtCoder/ABC458/" title="ABC458">ABC458</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-05-20T21:24:30.000Z" title="更新于 2026年05月20日 21:24:30">2026年05月20日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/">比赛</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/AtCoder/">AtCoder</a></span></div><div class="content">没错，今天是520，我没有和女朋友一起过，也没有女朋友 但是我可以和题解一起过 T^T A 问题陈述 给你一个由小写英文字母和正整数 NNN 组成的字符串 SSS 。 SSS 的长度至少为 2N+12N+12N+1 。 求从 SSS 的开头删除 NNN 个字符和从结尾删除 NNN 个字符后得到的字符串。  思路： 设SSS长度为LLL，输出SSS的第N+1N+1N+1到第L−NL-NL−N个字符即可，由于SSS下标从000开始，即输出SNS_NSN​至SL−N−1S_{L-N-1}SL−N−1​。  Code 12345678string S;cin&gt;&gt;S;int N;cin&gt;&gt;N;for(int i=N;i&lt;=S.size()-N-1;i++)&#123;    cout&lt;&lt;S[i];&#125; B 问题陈述 有一个网格，网格中有 HHH 行和 WWW 列。从顶部起第 iii 行，从左侧起第 jjj 列的单元格称为单元格 (i,j)(i, j)(i,j) 。 当 ∣x1−x2∣+∣y1−y2∣=1|x_1 - x_2| + |y_1 ...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/05/13/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/" title="最长上升子序列"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc6.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="最长上升子序列"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/05/13/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97/" title="最长上升子序列">最长上升子序列</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-05-13T21:54:00.000Z" title="更新于 2026年05月13日 21:54:00">2026年05月13日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/">算法学习</a></span></div><div class="content">算法描述： 给定一个序列a,求出最长的严格递增的子序列的长度。 子序列：在保证a中元素顺序不变的情况下，删除若干个元素得到的序列为子序列 一个很显然的思路： 我们考虑序列a1a_1a1​到aia_iai​：  当i=1时，该序列LIS长度显然为1，所以dp1dp_1dp1​=1。 当i=2时，若a2a_2a2​&gt;a1a_1a1​则，LIS长为2，即dp2dp_2dp2​=2，否则，LIS仍为1，即dp2dp_2dp2​=1。 当i=3时，在a1a_1a1​到a2a_2a2​之间寻找小于a3a_3a3​的数，对于比a3a_3a3​小的数，便可以考虑把a3a_3a3​加入到序列中，从而LIS长度加一，即dp3dp_3dp3​=1+dpkdp_kdpk​。 …以此类推 当i=k时，在a1a_1a1​到ak−1a_{k-1}ak−1​之间找出所有aia_iai​&lt;aka_kak​，并取出max{dpidp_idpi​}，则dpkdp_kdpk​=max{dpidp_idpi​}+1。  得到所有的dp后，dp中的最大值就是LIS的最大长度。 由此我们得到了LIS的递推求法： ...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/05/12/%E6%AF%94%E8%B5%9B/AtCoder/ABC457/" title="ABC457"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc7.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ABC457"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/05/12/%E6%AF%94%E8%B5%9B/AtCoder/ABC457/" title="ABC457">ABC457</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-05-12T21:48:00.000Z" title="更新于 2026年05月12日 21:48:00">2026年05月12日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/">比赛</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/AtCoder/">AtCoder</a></span></div><div class="content">A 问题陈述(DeepL翻译) 给你一个长度为 NNN 的序列 A=(A1,A2,⋯ ,AN)A = (A_1, A_2, \cdots , A_N)A=(A1​,A2​,⋯,AN​) 。 然后，给出一个介于 111 和 NNN 之间的整数 XXX 。 输出值 AXA_XAX​ 。  思路： 存储AAA数组，输出AXA_XAX​即可。  Code 12345678int n,x;cin&gt;&gt;n;for(int i=1;i&lt;=n;i++)&#123;    cin&gt;&gt;a[i];&#125;cin&gt;&gt;x;cout&lt;&lt;a[x]; B 问题陈述(DeepL翻译) 给你 NNN 序列 A1,A2,…,ANA_1, A_2, \ldots, A_NA1​,A2​,…,AN​ 。 序列 AiA_iAi​ 的长度为 LiL_iLi​ 和 Ai=(Ai,1,Ai,2,…,Ai,Li)A_i = (A_{i,1}, A_{i,2}, \ldots, A_{i,L_i})Ai​=(Ai,1​,Ai,2​,…,Ai,Li​​) 。 之后，给出整数 XX...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/05/12/%E6%95%99%E7%A8%8B/%E5%9C%A8VSCode%E4%B8%AD%E9%85%8D%E7%BD%AEClaudeCode/" title="在VSCode中配置ClaudeCode"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc4.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="在VSCode中配置ClaudeCode"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/05/12/%E6%95%99%E7%A8%8B/%E5%9C%A8VSCode%E4%B8%AD%E9%85%8D%E7%BD%AEClaudeCode/" title="在VSCode中配置ClaudeCode">在VSCode中配置ClaudeCode</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-05-12T20:29:00.000Z" title="更新于 2026年05月12日 20:29:00">2026年05月12日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="content">下载cc插件 首先再vscode中下载插件 Claude Code for VS Code ，完成后在右上角会有图标  ，这就是打开ClaudeCode对话的按钮，点开后会有登录认证，如果使用的不是Claude模型，那么就要准备绕过认证。 绕过cc认证 打开vscode设置，搜索 Claude Code: Environment Variables 点击Edit in settings.json。 添加以下字段并调整至如图所示  12&#123; &quot;name&quot;: &quot;ANTHROPIC_BASE_URL&quot;, &quot;value&quot;: &quot;https://xxxx&quot; &#125;,&#123; &quot;name&quot;: &quot;ANTHROPIC_AUTH_TOKEN&quot;, &quot;value&quot;: &quot;xxxx&quot; &#125; 随后重新打开claudecode对话界面，就绕过了认证。 下载cc switch 该步骤需要访问github，一个简单的方法就是下载Wa...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/05/12/%E6%95%99%E7%A8%8B/Markdown%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/" title="Markdown使用手册"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Markdown使用手册"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/05/12/%E6%95%99%E7%A8%8B/Markdown%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/" title="Markdown使用手册">Markdown使用手册</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-05-12T12:15:00.000Z" title="更新于 2026年05月12日 12:15:00">2026年05月12日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="content">标题 一级标题 二级标题 三级标题 … 六级标题 使用方法： 使用N个#+一个' '，将这一行转化为N级标题，如### 三级标题 分条 带数字的分条：  第一条 第二条  使用方法： x+'.'+' '，将这一行转化为带数字分条格式，如3. 第三条 不带数字的分条：  第一条 第二条  使用方法： '-'+' '，将这一行转化为不带数字分条格式，如- 第三条 分条的子分类:  一  一.1 一.2  一.2.1     二  二-1  二-1-1   二-2    使用方法： 在某一分类处采用Shift+Tab快捷键，可以换行并且不延续该分类的编号，再用Tab进行分级（需要自行尝试才好理解） 待办项  [ ] 第一条（未完成） [x] 第二条（已完成）  使用方法： '-'+' '+[ ]+' '，将这一行转化为待办项（将[ ]改为[x]表示已完成），如 - [ ] 第一条（未完成） - [x] 第二条（已完成） 字体 加粗字体 ：**加粗字体** 斜体 ：*斜体* 删除线 ：~~删除线~~ 高亮字体 ：&lt;mark&gt;高亮字体&lt;/mark&gt;（html代码） ...</div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">N0Ne-Zer0</div><div class="author-info-description">个人博客</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">60</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/N0Ne-Zer0"><i class="fab fa-github"></i><span>里面什么也没有</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/N0Ne-Zer0" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://space.bilibili.com/392726263" target="_blank" title="Bilibili"><i class="fab fa-bilibili" style="color: #FB7299;"></i></a><a class="social-icon" href="mailto:2677816734@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎访问我的博客<del></del></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/06/27/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%9C%80%E7%9F%AD%E8%B7%AF/" title="最短路"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc7.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="最短路"/></a><div class="content"><a class="title" href="/2026/06/27/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%9C%80%E7%9F%AD%E8%B7%AF/" title="最短路">最短路</a><time datetime="2026-06-27T21:03:14.000Z" title="发表于 2026年06月27日 21:03:14">2026年06月27日</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/06/21/%E6%AF%94%E8%B5%9B/Codeforces/1104d1+2/" title="1104d1+2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc4.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1104d1+2"/></a><div class="content"><a class="title" href="/2026/06/21/%E6%AF%94%E8%B5%9B/Codeforces/1104d1+2/" title="1104d1+2">1104d1+2</a><time datetime="2026-06-21T15:53:48.000Z" title="发表于 2026年06月21日 15:53:48">2026年06月21日</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/06/21/%E6%AF%94%E8%B5%9B/AtCoder/ABC463/" title="ABC463"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc5.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ABC463"/></a><div class="content"><a class="title" href="/2026/06/21/%E6%AF%94%E8%B5%9B/AtCoder/ABC463/" title="ABC463">ABC463</a><time datetime="2026-06-21T15:50:00.000Z" title="发表于 2026年06月21日 15:50:00">2026年06月21日</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/06/16/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/LCA%E7%AE%97%E6%B3%95/" title="LCA算法"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LCA算法"/></a><div class="content"><a class="title" href="/2026/06/16/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/LCA%E7%AE%97%E6%B3%95/" title="LCA算法">LCA算法</a><time datetime="2026-06-16T19:07:56.000Z" title="发表于 2026年06月16日 19:07:56">2026年06月16日</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/06/15/%E6%AF%94%E8%B5%9B/Codeforces/1103d3/" title="1103d3"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc1.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1103d3"/></a><div class="content"><a class="title" href="/2026/06/15/%E6%AF%94%E8%B5%9B/Codeforces/1103d3/" title="1103d3">1103d3</a><time datetime="2026-06-15T23:01:18.000Z" title="发表于 2026年06月15日 23:01:18">2026年06月15日</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%99%E7%A8%8B/"><span class="card-category-list-name">教程</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%9D%82%E9%A1%B9/"><span class="card-category-list-name">杂项</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%AF%94%E8%B5%9B/"><span class="card-category-list-name">比赛</span><span class="card-category-list-count">12</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%AF%94%E8%B5%9B/AtCoder/"><span class="card-category-list-name">AtCoder</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%AF%94%E8%B5%9B/Codeforces/"><span class="card-category-list-name">Codeforces</span><span class="card-category-list-count">5</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/"><span class="card-category-list-name">算法学习</span><span class="card-category-list-count">5</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Dilworth%E5%AE%9A%E7%90%86/" style="font-size: 1.1em; color: #999">Dilworth定理</a> <a href="/tags/%E5%BD%92%E5%B9%B6/" style="font-size: 1.1em; color: #999">归并</a> <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" style="font-size: 1.4em; color: #99a5b6">双指针</a> <a href="/tags/MinGW/" style="font-size: 1.1em; color: #999">MinGW</a> <a href="/tags/%E5%8D%95%E8%B0%83%E6%A0%88/" style="font-size: 1.1em; color: #999">单调栈</a> <a href="/tags/SPFA/" style="font-size: 1.1em; color: #999">SPFA</a> <a href="/tags/LIS/" style="font-size: 1.2em; color: #999da3">LIS</a> <a href="/tags/Dijkstra/" style="font-size: 1.2em; color: #999da3">Dijkstra</a> <a href="/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" style="font-size: 1.3em; color: #99a1ac">树状数组</a> <a href="/tags/%E5%A4%9A%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF/" style="font-size: 1.1em; color: #999">多源最短路</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.1em; color: #999">博客</a> <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" style="font-size: 1.1em; color: #999">组合数学</a> <a href="/tags/%E6%9E%84%E9%80%A0/" style="font-size: 1.3em; color: #99a1ac">构造</a> <a href="/tags/DFS/" style="font-size: 1.2em; color: #999da3">DFS</a> <a href="/tags/AI/" style="font-size: 1.1em; color: #999">AI</a> <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" style="font-size: 1.1em; color: #999">动态规划</a> <a href="/tags/%E6%95%B0%E8%AE%BA/" style="font-size: 1.1em; color: #999">数论</a> <a href="/tags/01%E8%83%8C%E5%8C%85/" style="font-size: 1.1em; color: #999">01背包</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 1.4em; color: #99a5b6">二分</a> <a href="/tags/RMQ%E9%97%AE%E9%A2%98/" style="font-size: 1.2em; color: #999da3">RMQ问题</a> <a href="/tags/Floyd/" style="font-size: 1.1em; color: #999">Floyd</a> <a href="/tags/Johnson/" style="font-size: 1.1em; color: #999">Johnson</a> <a href="/tags/%E9%85%92%E5%90%A7/" style="font-size: 1.1em; color: #999">酒吧</a> <a href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" style="font-size: 1.1em; color: #999">滑动窗口</a> <a href="/tags/ClaudeCode/" style="font-size: 1.1em; color: #999">ClaudeCode</a> <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/" style="font-size: 1.2em; color: #999da3">前缀和</a> <a href="/tags/LCA/" style="font-size: 1.2em; color: #999da3">LCA</a> <a href="/tags/C/" style="font-size: 1.1em; color: #999">C++</a> <a href="/tags/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97/" style="font-size: 1.1em; color: #999">优先队列</a> <a href="/tags/Hexo/" style="font-size: 1.1em; color: #999">Hexo</a> <a href="/tags/%E6%9D%83%E5%80%BC%E8%BD%AC%E5%8C%96/" style="font-size: 1.1em; color: #999">权值转化</a> <a href="/tags/BFS/" style="font-size: 1.1em; color: #999">BFS</a> <a href="/tags/%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/" style="font-size: 1.1em; color: #999">离线算法</a> <a href="/tags/%E8%AE%A1%E5%88%92/" style="font-size: 1.1em; color: #999">计划</a> <a href="/tags/%E6%A8%A1%E6%8B%9F/" style="font-size: 1.1em; color: #999">模拟</a> <a href="/tags/%E5%8F%8D%E6%82%94%E8%B4%AA%E5%BF%83/" style="font-size: 1.1em; color: #999">反悔贪心</a> <a href="/tags/Div-3/" style="font-size: 1.1em; color: #999">Div.3</a> <a href="/tags/%E6%A0%91%E7%9A%84%E7%9B%B4%E5%BE%84/" style="font-size: 1.1em; color: #999">树的直径</a> <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" style="font-size: 1.2em; color: #999da3">线段树</a> <a href="/tags/ABC/" style="font-size: 1.5em; color: #99a9bf">ABC</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/06/">
+            <span class="card-archive-list-date">
+              六月 2026
+            </span>
+            <span class="card-archive-list-count">12</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/05/">
+            <span class="card-archive-list-date">
+              五月 2026
+            </span>
+            <span class="card-archive-list-count">12</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">24</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">45.4k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-06-29T13:46:12.914Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/img/bg.webp);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By N0Ne-Zer0</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@5.5.4/source/js/utils.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@5.5.4/source/js/main.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js@3.0.0/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  },
+  processSubtitle: (content, extraContents = []) => {
+    if (true) {
+      const sub = ["记下那些心动的瞬间","我是旮旯给木高手","别看了，我真的是旮旯给木高手"].slice()
+
+      if (extraContents.length > 0) {
+        sub.unshift(...extraContents)
+      }
+
+      if (typeof content === 'string') {
+        sub.unshift(content)
+      } else if (Array.isArray(content)) {
+        sub.unshift(...content)
+      }
+
+      sub.length > 0 && typedJSFn.init(sub)
+    } else {
+      document.getElementById('subtitle').textContent = typeof content === 'string' ? content :
+        (Array.isArray(content) && content.length > 0 ? content[0] : '')
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  typedJSFn.processSubtitle(["记下那些心动的瞬间","我是旮旯给木高手","别看了，我真的是旮旯给木高手"])
+}
+typedJSFn.run(subtitleType)</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="40" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

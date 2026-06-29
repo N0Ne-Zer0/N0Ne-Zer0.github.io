@@ -1,0 +1,264 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>N0Ne-Zer0's Blog - 正在进行算法竞赛</title><meta name="author" content="N0Ne-Zer0"><meta name="copyright" content="N0Ne-Zer0"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="N0Ne-Zer0&#39;s Blog">
+<meta property="og:url" content="https://n0ne-zer0.github.io/index.html">
+<meta property="og:site_name" content="N0Ne-Zer0&#39;s Blog">
+<meta property="og:description" content="个人博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://n0ne-zer0.github.io/img/avatar.webp">
+<meta property="article:author" content="N0Ne-Zer0">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://n0ne-zer0.github.io/img/avatar.webp"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "N0Ne-Zer0's Blog",
+  "alternateName": [
+    "正在进行算法竞赛",
+    "n0ne-zer0.github.io"
+  ],
+  "url": "https://n0ne-zer0.github.io/"
+}</script><link rel="shortcut icon" href="/img/favicon.webp"><link rel="canonical" href="https://n0ne-zer0.github.io/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'N0Ne-Zer0\'s Blog',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><link rel="stylesheet" href="/css/diff.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.28/dist/katex.min.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      if ($loadingBox.classList.contains('loaded')) return
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+
+  if (document.readyState === 'complete') {
+    preloader.endLoading()
+  } else {
+    window.addEventListener('load', preloader.endLoading)
+    document.addEventListener('DOMContentLoaded', preloader.endLoading)
+    // Add timeout protection: force end after 7 seconds
+    setTimeout(preloader.endLoading, 7000)
+  }
+
+  if (false) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div class="bg-animation" id="web_bg" style="background-image: url(/img/bg.webp);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">60</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home/首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives/归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder"></i><span> Categories/分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tag"></i><span> Tags/标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link/友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> About/关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/img/idx_img.webp);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">N0Ne-Zer0's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home/首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives/归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder"></i><span> Categories/分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tag"></i><span> Tags/标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link/友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> About/关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">N0Ne-Zer0's Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/N0Ne-Zer0" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://space.bilibili.com/392726263" target="_blank" title="Bilibili"><i class="fab fa-bilibili" style="color: #FB7299;"></i></a><a class="social-icon" href="mailto:2677816734@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc masonry" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover"><a href="/2026/06/04/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E5%A5%BD%E9%A2%98%E5%88%86%E4%BA%AB%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD...%EF%BC%89/" title="好题分享（持续更新中...）"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc5.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="好题分享（持续更新中...）"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/06/04/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E5%A5%BD%E9%A2%98%E5%88%86%E4%BA%AB%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD...%EF%BC%89/" title="好题分享（持续更新中...）"><i class="fas fa-thumbtack sticky"></i>好题分享（持续更新中...）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-06-21T18:15:00.000Z" title="更新于 2026年06月21日 18:15:00">2026年06月21日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/">算法学习</a></span></div><div class="content"> 近期遇到的好题，值得反复回味。 持续更新，最新的在前面。 本文由AI分析题解后经个人修改而成   超节点——把 O(N²) 降为 O(N) 来源：ABC463-E — AtCoder Beginner Contest 463 技巧：超节点，堆优化 Dijkstra，代价拆分 思路：传送门花费为 Xu+Xv+YX_u + X_v + YXu​+Xv​+Y，如果暴力为每对 (u, v) 建边，是 O(N²) 的稠密图，Dijkstra 不可接受。关键洞察：传送代价可拆分——引入两个超节点 S、T，建 u→Su \to Su→S（权 XuX_uXu​），S→TS \to TS→T（权 Y），T→vT \to vT→v（权 XvX_vXv​），则 u→vu \to vu→v 传送等价于 u→S→T→vu \to S \to T \to vu→S→T→v。从 N² 条边降为 2N+1 条，配合堆优化 Dijkstra 即可。 核心：超节点拆分这类&quot;与两端相关的代价&quot;是图上最短路的经典模式。见到 f(u)+f(v)+Cf(u) + f(v) + Cf(u)+f(v)+C...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/06/09/%E6%9D%82%E9%A1%B9/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9%EF%BC%88%E7%9C%8B%E8%A7%81%E8%AF%B7%E5%82%AC%E6%88%91%EF%BC%89/" title="待办事项（看见请催我）"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc1.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="待办事项（看见请催我）"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/06/09/%E6%9D%82%E9%A1%B9/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9%EF%BC%88%E7%9C%8B%E8%A7%81%E8%AF%B7%E5%82%AC%E6%88%91%EF%BC%89/" title="待办事项（看见请催我）"><i class="fas fa-thumbtack sticky"></i>待办事项（看见请催我）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-06-16T19:10:00.000Z" title="更新于 2026年06月16日 19:10:00">2026年06月16日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9D%82%E9%A1%B9/">杂项</a></span></div><div class="content">这里记录我需要完成的文章 题解篇   Codeforces   AtCoder   算法篇 图论系列  最短路（Dijkstra 堆优化 / SPFA 判负环 / Floyd）（已完成） 最小生成树（Kruskal / Prim） 拓扑排序 Tarjan（SCC 缩点 / EDCC 缩点）  二分图最大匹配（匈牙利算法） 差分约束 网络流（Dinic 最大流 / EK 费用流） 2-SAT    数据结构系列  树状数组（BIT）（已完成） ST 表（静态 RMQ）（已完成） 前缀和 / 差分（一维 / 二维）（已完成）  线段树合并（配合树上操作） 可持久化 01 Trie（配合异或 / 数位） 点分治（统计树上路径） DSU on tree（树上启发式合并） 莫队 + 分块 CDQ 分治    DP 系列  背包 DP（01 / 完全 / 多重 / 分组） 区间 DP 状压 DP 树形 DP 数位 DP  单调队列优化 DP 斜率优化 DP    数论系列  EXGCD（扩展欧几里得） 高斯消元（实数 / 异或方程） 线性基（异或最值） 容斥原理  矩阵快速幂（加速递推） 欧...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/06/27/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%9C%80%E7%9F%AD%E8%B7%AF/" title="最短路"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc7.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="最短路"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/06/27/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%9C%80%E7%9F%AD%E8%B7%AF/" title="最短路">最短路</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-06-29T21:33:14.000Z" title="更新于 2026年06月29日 21:33:14">2026年06月29日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/">算法学习</a></span></div><div class="content">引言 最短路分为一些情况，主要有分类：非负or含负、边权or点权、单源点or全源点。 含有负权时还需要判断有无负环，而如果是点权则可以通过将一个点分裂成入点和出点，从而将点权转化为边权。 至于全源最短路好像考察的很少，Floyd也非常简单粗暴，而Johnson算法的势能思想是将负权图转化为非负权图从而可以跑Dijkstra。 在这篇文章中会设计到以下算法：  朴素Dijkstra和堆优化Dijkstra，处理非负权图最优 Bellman-Ford，常用于判断负环和限制经过边数 SPFA，Bellman-Ford的队列优化形式，容易被特殊构造图卡死导致TLE Floyd，基于DP的全源最短路，简单粗暴 Johnson，通过一次SPFA将图转化为非负权图后，进行V次Dijkstra  说明 distidist_idisti​数组是记录目前i点距离源点的最距离 disti,jdist_{i,j}disti,j​是记录目前点i到点j的最短距离 初始的distdistdist值为极大值inf⁡\infinf (i,j)(i,j)(i,j)表示从i到j这条边的边权 松弛，指i点当前的dist...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/06/21/%E6%AF%94%E8%B5%9B/Codeforces/1104d1+2/" title="1104d1+2"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc4.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1104d1+2"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/06/21/%E6%AF%94%E8%B5%9B/Codeforces/1104d1+2/" title="1104d1+2">1104d1+2</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-06-21T15:53:48.000Z" title="更新于 2026年06月21日 15:53:48">2026年06月21日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/">比赛</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/Codeforces/">Codeforces</a></span></div><div class="content">赛时ABCD，也是在最后时刻惊险通关D题，还不错 A A题，由于每个位置可以操作一次，最终结果就是一个单调不增的序列，从头开始模拟即可。  B Ja the Ghost is playing with rubber ducks. He has nnn piles of rubber ducks arranged in a row, where the iii-th pile contains aia_iai​ ducks. Quack the Duck gives Ja a strictly increasing sequence b1,b2,…,bnb_1,b_2,\ldots,b_nb1​,b2​,…,bn​ and commands him to make the piles a1,a2,…,ana_1,a_2,\ldots,a_na1​,a2​,…,an​ become exactly this sequence. Ja performs the process in the following two stages:   Ja may add any number of...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/06/21/%E6%AF%94%E8%B5%9B/AtCoder/ABC463/" title="ABC463"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc5.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ABC463"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/06/21/%E6%AF%94%E8%B5%9B/AtCoder/ABC463/" title="ABC463">ABC463</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-06-21T14:20:00.000Z" title="更新于 2026年06月21日 14:20:00">2026年06月21日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/">比赛</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/AtCoder/">AtCoder</a></span></div><div class="content">赛时ABCD，补题E，D题是典型的最大化最小值的二分答案问题，但是由于看错题耽误了很久，E题是一个建立超节点的单源最短路问题 ABC A题判断x:y是否等于16:9，一个需要注意的地方就是尽量把除法判断转化为乘法以避免精度问题（前提是不越界） B题也是简单的判断题，循环模拟一下就行了。 C题由于时间顺序已经排好了，只需要预处理一个后缀最大值再二分查找时间即可。  D D题出现了经典的最大化最小值描述，首先考虑二分答案，而答案显然具有单调性，越小越有可能，越大越不可能。 至于check函数的写法，先对所有布的右端点进行升序排序，然后贪心地排着取布，满足不重叠，且间距大于需要判断的值就取，如果能取够K个则为True。  Code 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657void sol()&#123;    struct clo    &#123;        int l,r,i;    &#125;;      ...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/06/16/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/LCA%E7%AE%97%E6%B3%95/" title="LCA算法"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LCA算法"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/06/16/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/LCA%E7%AE%97%E6%B3%95/" title="LCA算法">LCA算法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-06-16T19:07:56.000Z" title="更新于 2026年06月16日 19:07:56">2026年06月16日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/">算法学习</a></span></div><div class="content">拖延了好久，终于找时间写LCA算法整合了 什么是LCA？ LCA，即Lowest Common Ancestor，最近公共祖先，指在一棵树上两个点的公共祖先中深度最大的那个祖先。 在这里，我会分别介绍朴素法，倍增法，Tarjan离线算法，欧拉序+RMQ，DFN序+RMQ，重链剖分(HLD)。 建议结合代码观看 最常用的是倍增法 RMQ(Range Minimum/Maximum Query)，这里用ST表实现。 *\text{*}*这里重链剖分得到的DFN序在求LCA时并不会用到，实际上重链剖分更重要的作用是可以结合线段树将树上问题转化为区间问题。 如果以后有可能的话，我会去学习动态树求LCA（Link-Cut Tree）  朴素法 维护信息： 节点的父亲FxF_xFx​以及深度HxH_xHx​。 算法步骤： 先通过一遍DFS遍历树，维护节点父亲和节点深度。 对于树上两点u和v，比较两者深度，如果两者深度不同，则不断升高深度更大的点，直至两者深度相同。 此时如果两个节点为同一节点的话，就已经找到了LCA。 否则，让两个节点同步上升，直到两者相等。相等时的节点就是所求的LCA。 显...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/06/15/%E6%AF%94%E8%B5%9B/Codeforces/1103d3/" title="1103d3"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc1.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1103d3"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/06/15/%E6%AF%94%E8%B5%9B/Codeforces/1103d3/" title="1103d3">1103d3</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-06-16T00:51:18.000Z" title="更新于 2026年06月16日 00:51:18">2026年06月16日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/">比赛</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/Codeforces/">Codeforces</a></span></div><div class="content">本次比赛非常耻辱，只做了AB题，C题贪心失败，D题跳过去做E题，但是一直没调出来。补了CDEF1 AB A题输出MAX+1-MIN即可。 B题顺序处理遇到1则将该位置和往后第k个位置转换，最后判断最后无法改变的k个位置有无1即可。  补题 C An annual programmers fair is taking place on the main square of Omsk. You, as the main programmer of Omsk, decided to take part in this wonderful event and went there. At the entrance, a guard decided to check your skills and gave you a problem: You are given three integers aaa, bbb, xxx. You want to make aaa and bbb equal. In order to do so, you can apply the following o...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/06/15/%E6%AF%94%E8%B5%9B/AtCoder/ABC462/" title="ABC462"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc6.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ABC462"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/06/15/%E6%AF%94%E8%B5%9B/AtCoder/ABC462/" title="ABC462">ABC462</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-06-15T22:43:29.000Z" title="更新于 2026年06月15日 22:43:29">2026年06月15日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/">比赛</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/AtCoder/">AtCoder</a></span></div><div class="content">赛时ABCE，补D，本次题还是相对简单的，但是做E题过程中因为低级失误罚时很严重，D题没注意不同开始时间也算不同组合 AB A题：输出字符串中的数字，判断即可。 B题：i给给j礼物，往对j的数组中添加i即可。  C Problem Statement There are NNN points numbered 111 through NNN on a two-dimensional plane. Point iii (1≤i≤N)(1\le i\le N)(1≤i≤N) has coordinates (Xi,Yi)(X_i,Y_i)(Xi​,Yi​). Here, it is guaranteed that XXX and YYY are each permutations of (1,2,…,N)(1,2,\ldots,N)(1,2,…,N). Find the number of values of iii such that the interior (not including the boundary) of the rectangle with sides para...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/06/11/%E6%AF%94%E8%B5%9B/Codeforces/1102d2/" title="1102d2"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc4.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1102d2"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/06/11/%E6%AF%94%E8%B5%9B/Codeforces/1102d2/" title="1102d2">1102d2</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-06-11T22:55:35.000Z" title="更新于 2026年06月11日 22:55:35">2026年06月11日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/">比赛</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/Codeforces/">Codeforces</a></span></div><div class="content">赛时ABC三题，D题畏惧了，没有看，实际上非常简单，F题需要一个特殊处理 A题是简单的排序判断 B题是枚举12剩余类，其中只有余数10不是回文数，因此10没有答案，大于10且余数为10的为22，是回文数，因此直接取1,2,3,4,5,6,7,8,9,22,11作为回文数即可。 如果实在没想到，不妨试试打表，很容易观察出来 PS：我就是打表发现的。。。  D 给你一个整数 kkk 。有一个 nnn \位二进制数 a1,a2,…,a2k+1a_1, a_2, \ldots, a_{2^k + 1}a1​,a2​,…,a2k+1​ 的序列。号码 a1a_1a1​ 和 a2k+1a_{2^k + 1}a2k+1​ 是给你的，其他号码未知。然后通过 kkk 步骤如下填写未知数字：  假设在第 iii 步之前，索引为 p1&lt;p2&lt;…&lt;pmp_1 \lt p_2 \lt \ldots \lt p_mp1​&lt;p2​&lt;…&lt;pm​ 的数字已经被填充。 （在第一步之前，这些是索引为 1,2k+11, 2^{k} + 11,2k+1 的数字）。 然后，对于从 111 ...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/06/11/%E6%AF%94%E8%B5%9B/AtCoder/ABC461/" title="ABC461"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc7.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ABC461"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/06/11/%E6%AF%94%E8%B5%9B/AtCoder/ABC461/" title="ABC461">ABC461</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-06-11T21:43:29.000Z" title="更新于 2026年06月11日 21:43:29">2026年06月11日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/">比赛</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/AtCoder/">AtCoder</a></span></div><div class="content">本次赛时三题ABC，补了DEF，D出现的问题是对特殊情况没有判断出来，E题是一道有趣的数据结构题，F是正解是DP，但是数据较弱，特殊的爆搜也是可以过的。 由于时间有限，从本次题解开始我就不再去详细写一些过于简单的题了，只是一笔带过。。。 ABC A题是基础的比较题。 B题判断映射关系。 C题排序后贪心地选够M个颜色后，再贪心地任意选择剩下的价值更大的东西。  补题 D 问题陈述 有一个 H×WH \times WH×W 网格，每个单元格包含一个整数 000 或 111 。 每个单元格中写入的整数的信息以长度为 WWW 的 HHH 字符串 S1,S2,…,SHS_1, S_2, \dots, S_HS1​,S2​,…,SH​ 的形式给出。如果 SiS_iSi​ 的第 jjj 个字符为“0”，则将 000 写入网格顶部起第 iii 行、左侧起第 jjj 列的单元格中；如果 SiS_iSi​ 的第 jjj 个字符是“1”，则在该单元格中写入 111 。 求写入的整数之和等于 KKK 的矩形区域的数量。 更正式地说，找到满足以下所有条件的整数四元组 (r1,c1,r2,c2)(r_1, ...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/06/01/%E6%AF%94%E8%B5%9B/Codeforces/1101d2/" title="1101d2"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc6.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1101d2"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/06/01/%E6%AF%94%E8%B5%9B/Codeforces/1101d2/" title="1101d2">1101d2</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-06-01T22:57:00.000Z" title="更新于 2026年06月01日 22:57:00">2026年06月01日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/">比赛</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/Codeforces/">Codeforces</a></span></div><div class="content">刚打完ABC接着要打div2，看到第一题第一时间没想过来就不打算下场了，后续补题发现，其实前三题都比较简单 补题 A 题面 爱丽丝邀请她的朋友参加一个聚会吃蛋糕。然而，每个朋友可能不在同一个地方，所以大家必须先在同一个地点见面。 Alice 有 nnn 个朋友，其中第 iii 个朋友位于位置 aia_iai​ 。为了让每个人都在同一个地方，Alice 必须进行多次群组通话。不幸的是，信号很弱，Alice 一次只能呼叫 222 其他人。 作为一个好人，爱丽丝不希望她的朋友走太远。因此，对于包含第 iii 个朋友和第 jjj 个朋友的每个群组通话，Alice 会告诉他们两个在 min⁡(ai,aj)\min(a_i, a_j)min(ai​,aj​) 和 max⁡(ai,aj)\max(a_i, a_j)max(ai​,aj​) （含）之间的某个整数位置见面。之后，他们两人都会快速移动到该位置，以至于Alice在移动过程中无法进行任何群组通话。请注意，一旦这些朋友到达该位置，爱丽丝就可以再次呼叫他们。 聚会即将开始，Alice 需要快速进行群组通话。帮助她找到需要拨打的最少群组通话次...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/06/01/%E6%AF%94%E8%B5%9B/AtCoder/ABC460/" title="ABC460"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc3.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ABC460"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/06/01/%E6%AF%94%E8%B5%9B/AtCoder/ABC460/" title="ABC460">ABC460</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-06-02T23:15:00.000Z" title="更新于 2026年06月02日 23:15:00">2026年06月02日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/">比赛</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/AtCoder/">AtCoder</a></span></div><div class="content">本次赛时只有3题，D题没有写方向数组，八个方向全手搓，导致写了非常久，调试也极其困难，实际上就是个简单的BFS题。而E题作为数论题也是比较简单，是可以尝试解决的。 A 问题陈述 您将获得正整数 NNN 和 MMM 。 如果重复执行以下操作，而 MMM 的值不是 000 ，请找出执行的操作次数。  设 xxx 为 NNN 除以 MMM 的余数。将 MMM 的值替换为 xxx 。  可以证明，经过有限次数的运算后， MMM 变成了 000 。  思路: 按照题意模拟并计数即可。  Code 123456789101112void sol()&#123;    int M,N;    cin&gt;&gt;N&gt;&gt;M;    int cnt=0;    while(M)    &#123;        M=N%M;        cnt++;    &#125;    cout&lt;&lt;cnt;&#125; B 问题陈述 xyxyxy \平面上有两个圆 C1C_1C1​ 和 C2C_2C2​ 。在这个问题中，圆指的是圆周而非圆面。 圆 C1C_1C1​ 的圆心为 (X...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/05/30/%E6%9D%82%E9%A1%B9/%E4%BA%94%E6%9C%88%E4%BB%BD%E9%97%B2%E6%B8%B8_%E9%94%90%E8%AF%84%E5%85%89%E8%B0%B7%E4%B8%96%E7%95%8C%E5%9F%8E%E9%99%84%E8%BF%91%E9%85%92%E5%90%A7/" title="五月份闲游-锐评光谷世界城附近酒吧"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc4.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="五月份闲游-锐评光谷世界城附近酒吧"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/05/30/%E6%9D%82%E9%A1%B9/%E4%BA%94%E6%9C%88%E4%BB%BD%E9%97%B2%E6%B8%B8_%E9%94%90%E8%AF%84%E5%85%89%E8%B0%B7%E4%B8%96%E7%95%8C%E5%9F%8E%E9%99%84%E8%BF%91%E9%85%92%E5%90%A7/" title="五月份闲游-锐评光谷世界城附近酒吧">五月份闲游-锐评光谷世界城附近酒吧</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-05-30T12:00:00.000Z" title="更新于 2026年05月30日 12:00:00">2026年05月30日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9D%82%E9%A1%B9/">杂项</a></span></div><div class="content">五月也快结束了，我一共出游5次，到访6家酒吧（5清吧1闹吧）。 包含：  文拾雅·茶酒馆 2046艺术音乐酒吧 爱你 HOMIE BAR 游龙火塘民谣酒馆 Rouman R&amp;B Bar 霍格沃茨  锐评：（只针对鸡尾酒，因为我不喝其他的，我个人很喜欢安静的酒吧）  文拾雅·茶酒馆：超大杯下。  优点：非常独特的中式氛围和环境。很安静，放一些平和的中文歌，里面的特调非常非常有格调，其他鸡尾酒页很有格调，调的酒也是我觉得最好喝的。酒客稀少。 缺点：可能由于位置过于难找。酒客稀少，经常包场，去过三次都没见过歌手。价格偏贵。      2046艺术音乐酒吧：大杯上。  优点：有常驻男歌手，和周末晚的限定女歌手？（我周末晚上去过一次但是没见到）。酒调的不错，氛围第二好，酒客较多，音乐抒情，鸡尾酒很有格调，有台球桌。 缺点：价格偏贵，情侣较多。      爱你 HOMIE BAR：中杯。  优点：有歌手（不知道是不是常），价格便宜，酒客较多，服务员和酒客都很热情。 缺点：是我不大喜欢的闹吧，但我不习惯，鸡尾酒没有什么装饰，以啤酒为主。      游龙火塘民谣酒馆：大杯上  优点：常驻...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/05/28/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E5%8C%BA%E9%97%B4%E6%93%8D%E4%BD%9C%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD...%EF%BC%89/" title="区间操作"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc5.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="区间操作"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/05/28/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E5%8C%BA%E9%97%B4%E6%93%8D%E4%BD%9C%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD...%EF%BC%89/" title="区间操作">区间操作</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-06-27T21:28:00.000Z" title="更新于 2026年06月27日 21:28:00">2026年06月27日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/">算法学习</a></span></div><div class="content">引言 给定一个数组AAA，我们需要对他进行各种各样的操作，例如访问/修改单点、修改区间、查询区间性质（如求和、最值…）等操作。 我们列举一些经典操作：区间求和、区间修改、求区间最值。 用这些经典操作，我们引入一系列数据结构，并对其进行复杂度分析。  前缀和 当我们需要进行区间求和的时候，对于普通数组AAA，我们直接将对应区间相加，时间复杂度为O(N)O(N)O(N)。但对于大批量的区间求和，这种做法显然不合适。 我们建立一个数组PrePrePre，PreiPre_iPrei​表示从A1A_1A1​到AiA_iAi​的和，采用递推式Prei=Prei−1+AiPre_i=Pre_{i-1}+A_iPrei​=Prei−1​+Ai​便可构造PrePrePre。 这样的话，AlA_lAl​到ArA_rAr​的和便可以用  Prer−Prel−1Pre_r-Pre_{l-1}Prer​−Prel−1​   来快速得到。 预处理时间：O(N)O(N)O(N) 区间求和时间：O(1)O(1)O(1) 空间：O(N)O(N)O(N) 二维扩展： 对于二维数组Ai,jA_{i,j}Ai,j​，我...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/05/27/%E6%AF%94%E8%B5%9B/AtCoder/ABC459/" title="ABC459"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc1.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ABC459"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/05/27/%E6%AF%94%E8%B5%9B/AtCoder/ABC459/" title="ABC459">ABC459</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-05-27T21:30:00.000Z" title="更新于 2026年05月27日 21:30:00">2026年05月27日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/">比赛</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%AF%94%E8%B5%9B/AtCoder/">AtCoder</a></span></div><div class="content">本次比赛赛时三道题，但是由于D题卡到结束也没想到自己的Yes No输出错了，就算自己过了四道题吧，悲… 刚打完比赛，顺便把题解写了 A 问题陈述 给你一个介于 111 和 101010 （含）之间的整数 XXX 。 输出从字符串 HelloWorld 中只删除 XXX -th 字符得到的字符串。  思路: 输出时跳过SX−1S_{X-1}SX−1​即可。  Code 1234567891011void sol()&#123;    int X;    string S=&quot;HelloWorld&quot;;    cin&gt;&gt;X;    for(int i=0;i&lt;10;i++)    &#123;        if(i+1==X)continue;        cout&lt;&lt;S[i];    &#125;&#125; B 问题陈述 给你一个由小写英文字母组成的 NNN 字符串 S1,S2,…,SNS_1, S_2, \ldots, S_NS1​,S2​,…,SN​ 。 定义 NNN 数字 C1,C2,…,CNC_1, C_2, \ldots...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2026/05/26/%E6%95%99%E7%A8%8B/%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AEVSCode/" title="简单配置VSCode(C++)"><img class="post-bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc6.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="简单配置VSCode(C++)"></a></div><div class="recent-post-info"><a class="article-title" href="/2026/05/26/%E6%95%99%E7%A8%8B/%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AEVSCode/" title="简单配置VSCode(C++)">简单配置VSCode(C++)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time datetime="2026-05-26T20:42:00.000Z" title="更新于 2026年05月26日 20:42:00">2026年05月26日</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="content">安装工具链 检查一下自己这一步是否已完成，在终端里输入g++ -v，如果正确显示路径则本步骤可跳过，记录一下到\mingw64文件夹的路径即可  下载MinGW-w64，推荐网站 https://winlibs.com/ ，往下翻选择一个心仪的版本下载解压就好了。 打开MinGW文件夹，再打开\bin文件夹，记录\bin文件夹路径后，打开高级系统设置，在高级一栏中点击环境变量，在下方系统中找到Path，双击点开后，电机右侧新建，输入记录的\bin文件夹路径，如..(自己解压的位置)\mingw64\bin，随后一路点击确定即可，再用上面的方法检验是否完成。   安装VSCode插件 （中文插件就不在这里说明了） 下载插件 C/C++ 和 C/C++ Compile Run。 打开插件C/C++的设置，需要修改三个位置。  Cpp Standard ：改为对应C++标准（竞赛一般用c++17） Include Path ：点击添加项，复制文件夹路径。打开\mingw64文件夹，依次打开\include、c++、\xx.x.x(自己对应的文件夹)后，复制路径，粘贴到对应位置，并在后面...</div></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">N0Ne-Zer0</div><div class="author-info-description">个人博客</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">60</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/N0Ne-Zer0"><i class="fab fa-github"></i><span>里面什么也没有</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/N0Ne-Zer0" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://space.bilibili.com/392726263" target="_blank" title="Bilibili"><i class="fab fa-bilibili" style="color: #FB7299;"></i></a><a class="social-icon" href="mailto:2677816734@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎访问我的博客<del></del></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/06/27/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%9C%80%E7%9F%AD%E8%B7%AF/" title="最短路"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc7.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="最短路"/></a><div class="content"><a class="title" href="/2026/06/27/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/%E6%9C%80%E7%9F%AD%E8%B7%AF/" title="最短路">最短路</a><time datetime="2026-06-27T21:03:14.000Z" title="发表于 2026年06月27日 21:03:14">2026年06月27日</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/06/21/%E6%AF%94%E8%B5%9B/Codeforces/1104d1+2/" title="1104d1+2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc4.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1104d1+2"/></a><div class="content"><a class="title" href="/2026/06/21/%E6%AF%94%E8%B5%9B/Codeforces/1104d1+2/" title="1104d1+2">1104d1+2</a><time datetime="2026-06-21T15:53:48.000Z" title="发表于 2026年06月21日 15:53:48">2026年06月21日</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/06/21/%E6%AF%94%E8%B5%9B/AtCoder/ABC463/" title="ABC463"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc5.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ABC463"/></a><div class="content"><a class="title" href="/2026/06/21/%E6%AF%94%E8%B5%9B/AtCoder/ABC463/" title="ABC463">ABC463</a><time datetime="2026-06-21T15:50:00.000Z" title="发表于 2026年06月21日 15:50:00">2026年06月21日</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/06/16/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/LCA%E7%AE%97%E6%B3%95/" title="LCA算法"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LCA算法"/></a><div class="content"><a class="title" href="/2026/06/16/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/LCA%E7%AE%97%E6%B3%95/" title="LCA算法">LCA算法</a><time datetime="2026-06-16T19:07:56.000Z" title="发表于 2026年06月16日 19:07:56">2026年06月16日</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/06/15/%E6%AF%94%E8%B5%9B/Codeforces/1103d3/" title="1103d3"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/dc1.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1103d3"/></a><div class="content"><a class="title" href="/2026/06/15/%E6%AF%94%E8%B5%9B/Codeforces/1103d3/" title="1103d3">1103d3</a><time datetime="2026-06-15T23:01:18.000Z" title="发表于 2026年06月15日 23:01:18">2026年06月15日</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%99%E7%A8%8B/"><span class="card-category-list-name">教程</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%9D%82%E9%A1%B9/"><span class="card-category-list-name">杂项</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%AF%94%E8%B5%9B/"><span class="card-category-list-name">比赛</span><span class="card-category-list-count">12</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%AF%94%E8%B5%9B/AtCoder/"><span class="card-category-list-name">AtCoder</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%AF%94%E8%B5%9B/Codeforces/"><span class="card-category-list-name">Codeforces</span><span class="card-category-list-count">5</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0/"><span class="card-category-list-name">算法学习</span><span class="card-category-list-count">5</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Dilworth%E5%AE%9A%E7%90%86/" style="font-size: 1.1em; color: #999">Dilworth定理</a> <a href="/tags/%E5%BD%92%E5%B9%B6/" style="font-size: 1.1em; color: #999">归并</a> <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/" style="font-size: 1.4em; color: #99a5b6">双指针</a> <a href="/tags/MinGW/" style="font-size: 1.1em; color: #999">MinGW</a> <a href="/tags/%E5%8D%95%E8%B0%83%E6%A0%88/" style="font-size: 1.1em; color: #999">单调栈</a> <a href="/tags/SPFA/" style="font-size: 1.1em; color: #999">SPFA</a> <a href="/tags/LIS/" style="font-size: 1.2em; color: #999da3">LIS</a> <a href="/tags/Dijkstra/" style="font-size: 1.2em; color: #999da3">Dijkstra</a> <a href="/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" style="font-size: 1.3em; color: #99a1ac">树状数组</a> <a href="/tags/%E5%A4%9A%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF/" style="font-size: 1.1em; color: #999">多源最短路</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.1em; color: #999">博客</a> <a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" style="font-size: 1.1em; color: #999">组合数学</a> <a href="/tags/%E6%9E%84%E9%80%A0/" style="font-size: 1.3em; color: #99a1ac">构造</a> <a href="/tags/DFS/" style="font-size: 1.2em; color: #999da3">DFS</a> <a href="/tags/AI/" style="font-size: 1.1em; color: #999">AI</a> <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" style="font-size: 1.1em; color: #999">动态规划</a> <a href="/tags/%E6%95%B0%E8%AE%BA/" style="font-size: 1.1em; color: #999">数论</a> <a href="/tags/01%E8%83%8C%E5%8C%85/" style="font-size: 1.1em; color: #999">01背包</a> <a href="/tags/%E4%BA%8C%E5%88%86/" style="font-size: 1.4em; color: #99a5b6">二分</a> <a href="/tags/RMQ%E9%97%AE%E9%A2%98/" style="font-size: 1.2em; color: #999da3">RMQ问题</a> <a href="/tags/Floyd/" style="font-size: 1.1em; color: #999">Floyd</a> <a href="/tags/Johnson/" style="font-size: 1.1em; color: #999">Johnson</a> <a href="/tags/%E9%85%92%E5%90%A7/" style="font-size: 1.1em; color: #999">酒吧</a> <a href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" style="font-size: 1.1em; color: #999">滑动窗口</a> <a href="/tags/ClaudeCode/" style="font-size: 1.1em; color: #999">ClaudeCode</a> <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/" style="font-size: 1.2em; color: #999da3">前缀和</a> <a href="/tags/LCA/" style="font-size: 1.2em; color: #999da3">LCA</a> <a href="/tags/C/" style="font-size: 1.1em; color: #999">C++</a> <a href="/tags/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97/" style="font-size: 1.1em; color: #999">优先队列</a> <a href="/tags/Hexo/" style="font-size: 1.1em; color: #999">Hexo</a> <a href="/tags/%E6%9D%83%E5%80%BC%E8%BD%AC%E5%8C%96/" style="font-size: 1.1em; color: #999">权值转化</a> <a href="/tags/BFS/" style="font-size: 1.1em; color: #999">BFS</a> <a href="/tags/%E7%A6%BB%E7%BA%BF%E7%AE%97%E6%B3%95/" style="font-size: 1.1em; color: #999">离线算法</a> <a href="/tags/%E8%AE%A1%E5%88%92/" style="font-size: 1.1em; color: #999">计划</a> <a href="/tags/%E6%A8%A1%E6%8B%9F/" style="font-size: 1.1em; color: #999">模拟</a> <a href="/tags/%E5%8F%8D%E6%82%94%E8%B4%AA%E5%BF%83/" style="font-size: 1.1em; color: #999">反悔贪心</a> <a href="/tags/Div-3/" style="font-size: 1.1em; color: #999">Div.3</a> <a href="/tags/%E6%A0%91%E7%9A%84%E7%9B%B4%E5%BE%84/" style="font-size: 1.1em; color: #999">树的直径</a> <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/" style="font-size: 1.2em; color: #999da3">线段树</a> <a href="/tags/ABC/" style="font-size: 1.5em; color: #99a9bf">ABC</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/06/">
+            <span class="card-archive-list-date">
+              六月 2026
+            </span>
+            <span class="card-archive-list-count">12</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/05/">
+            <span class="card-archive-list-date">
+              五月 2026
+            </span>
+            <span class="card-archive-list-count">12</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">24</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">45.4k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-06-29T13:46:12.914Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/img/bg.webp);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By N0Ne-Zer0</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@5.5.4/source/js/utils.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@5.5.4/source/js/main.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js@3.0.0/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  },
+  processSubtitle: (content, extraContents = []) => {
+    if (true) {
+      const sub = ["记下那些心动的瞬间","我是旮旯给木高手","别看了，我真的是旮旯给木高手"].slice()
+
+      if (extraContents.length > 0) {
+        sub.unshift(...extraContents)
+      }
+
+      if (typeof content === 'string') {
+        sub.unshift(content)
+      } else if (Array.isArray(content)) {
+        sub.unshift(...content)
+      }
+
+      sub.length > 0 && typedJSFn.init(sub)
+    } else {
+      document.getElementById('subtitle').textContent = typeof content === 'string' ? content :
+        (Array.isArray(content) && content.length > 0 ? content[0] : '')
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  typedJSFn.processSubtitle(["记下那些心动的瞬间","我是旮旯给木高手","别看了，我真的是旮旯给木高手"])
+}
+typedJSFn.run(subtitleType)</script></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="40" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

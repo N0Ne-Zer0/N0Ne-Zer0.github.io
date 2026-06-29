@@ -1,0 +1,6 @@
+#page-header.not-home-page,
+#footer {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
